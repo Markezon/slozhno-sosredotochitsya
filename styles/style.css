@@ -2,4 +2,127 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color);
+}
+
+.header {
+  position: relative;
+  min-inline-size: 1024px;
+  min-block-size: 768px;
+  /* change min to max block size */
+  padding: 20px;
+  background-image: url(../images/cover-image-dark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__theme-menu {
+}
+
+.header__theme-menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.header__theme-menu-item {
+  min-inline-size: 70px;
+  min-block-size: 26px;
+  /*   justify-self: end; */
+}
+
+.header__theme-menu-button {
+  min-inline-size: 70px;
+  block-size: 26px;
+  padding-block-end: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  line-height: 18px;
+  font-style: normal;
+  border: none;
+  border-radius: 0;
+  color: var(--accent-color);
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__rec {
+  position: absolute;
+  right: 48px;
+  top: 20px;
+  color: var(--accent-color);
+  line-height: 138.889%;
+}
+
+.header__rec::after {
+  position: absolute;
+  left: 43px;
+  top: 8px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.header__title {
+  margin-block-start: 274.5px;
+  margin-inline-start: -20px;
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: inherit;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-style: inherit;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.header__text {
+  align-self: end;
+  margin-block-start: 114px;
+  max-inline-size: 491px;
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 130%;
 }
