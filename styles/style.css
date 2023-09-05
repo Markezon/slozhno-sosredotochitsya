@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--bg-color);
+  /*   background-attachment: fixed; */
 }
 
 .header {
@@ -79,6 +80,14 @@
 }
 
 .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--accent-color);
 }
 
@@ -116,13 +125,87 @@
 
 .title-decor {
   background-color: var(--accent-color);
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 130%;
 }
 
 .header__text {
   align-self: end;
   margin-block-start: 114px;
   max-inline-size: 491px;
-  color: var(--title-color);
+}
+
+.content {
+  padding-inline: 20px;
+}
+
+.content__title {
+  color: var(--accent-color);
   font-weight: 700;
   line-height: 130%;
+  font-size: inherit;
+}
+
+.content__text {
+  margin-block-start: 10px;
+  color: var(--text-color);
+}
+
+.why {
+  margin-block-start: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.why__card {
+  grid-column: 2 / 3;
+}
+
+.text__link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.text__link:hover {
+  border-bottom: 2px solid var(--text-color);
+}
+
+.text__link:focus {
+  outline: 1px solid var(--text-color);
+}
+
+.what {
+  margin-block-start: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.what__card_title {
+  grid-column: 1 / 4;
+  width: calc((100% - 40px) / 3);
+}
+
+.how {
+  margin-block-start: 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.how__title {
+  margin-block-end: 20px;
+}
+
+.how__card {
+  grid-column: 2 / 3;
+}
+
+.how__card_subtitle {
+  font-weight: 400;
+  font-size: inherit;
 }
