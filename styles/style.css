@@ -155,13 +155,13 @@
 .why {
   margin-block-start: 60px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
 
 .why__card {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 
 .text__link {
@@ -192,7 +192,7 @@
 .how {
   margin-block-start: 80px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -202,10 +202,95 @@
 }
 
 .how__card {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
 }
 
 .how__card_subtitle {
   font-weight: 400;
   font-size: inherit;
+}
+
+.gallery {
+  margin-block-start: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.gallery__title {
+  grid-column: 1 / 4;
+}
+
+.gallery__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__card_sunset {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.gallery__card_ice-cream {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+}
+
+.gallery__card_tape {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+.gallery__card_books {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.gallery__card_street {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+
+.footer {
+  position: relative;
+  margin-block-start: 60px;
+  min-block-size: 768px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__title {
+  color: #db00ff;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-family: inherit;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-style: inherit;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
 }
