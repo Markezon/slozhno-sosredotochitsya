@@ -7,4 +7,10 @@
   --text-color: #f1b2ce;
   --bg-color: #000028;
   --title-color: #000028;
+  --font-family: "IBM Plex mono";
+  --padding-inline: 20px;
+  --padding-block: 20px;
+  --margin-top-small: 60px;
+  --margin-top-big: 80px;
+  --gallery-gap: 20px;
 }

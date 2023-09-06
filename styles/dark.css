@@ -5,6 +5,16 @@
 */
 
 .page.theme_dark {
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --bg-color: #000028;
+  --title-color: #000028;
+  --font-family: "IBM Plex mono";
+  --padding-inline: 20px;
+  --padding-block: 20px;
+  --margin-top-small: 60px;
+  --margin-top-big: 80px;
+  --gallery-gap: 20px;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
