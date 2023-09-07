@@ -159,7 +159,7 @@
   row-gap: 20px;
 }
 
-.why__card {
+.why .card {
   grid-column: 2 / 4;
 }
 
@@ -200,7 +200,7 @@
   margin-block-end: 20px;
 }
 
-.how__card {
+.how .card {
   grid-column: 2 / 4;
 }
 
@@ -229,27 +229,27 @@
   object-fit: cover;
 }
 
-.gallery__card_sunset {
+.gallery .gallery__card:nth-child(2) {
   grid-column: 1 / 3;
   grid-row: 2 / 3;
 }
 
-.gallery__card_ice-cream {
+.gallery .gallery__card:nth-child(3) {
   grid-column: 3 / 4;
   grid-row: 2 / 4;
 }
 
-.gallery__card_tape {
+.gallery .gallery__card:nth-child(4) {
   grid-column: 1 / 2;
   grid-row: 3 / 5;
 }
 
-.gallery__card_books {
+.gallery .gallery__card:nth-child(5) {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
 
-.gallery__card_street {
+.gallery .gallery__card:nth-child(6) {
   grid-column: 2 / 4;
   grid-row: 4 / 5;
 }
@@ -316,7 +316,7 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .why__card {
+  .why .card {
     grid-column: 2 / 3;
   }
 
@@ -332,7 +332,7 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  .how__card {
+  .how .card {
     grid-column: 2 / 3;
   }
 }
@@ -386,7 +386,7 @@
     grid-template-columns: 1fr;
   }
 
-  .why__card {
+  .why .card {
     grid-column: 1 / 2;
   }
 
@@ -394,7 +394,7 @@
     grid-template-columns: 1fr;
   }
 
-  .how__card {
+  .how .card {
     grid-column: 1 / 2;
   }
 
@@ -411,27 +411,27 @@
     grid-column: 1 / 2;
   }
 
-  .gallery__card_sunset {
+  .gallery .gallery__card:nth-child(2) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
 
-  .gallery__card_ice-cream {
+  .gallery .gallery__card:nth-child(3) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
 
-  .gallery__card_tape {
+  .gallery .gallery__card:nth-child(4) {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
   }
 
-  .gallery__card_books {
+  .gallery .gallery__card:nth-child(5) {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
   }
 
-  .gallery__card_street {
+  .gallery .gallery__card:nth-child(6) {
     grid-column: 1 / 2;
     grid-row: 6 / 7;
   }
