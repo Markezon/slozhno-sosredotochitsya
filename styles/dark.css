@@ -6,17 +6,35 @@
 
 .page.theme_dark {
   --accent-color: #ff0070;
+  --title-bg-color: #ff0070;
+  --link-color: #ff0070;
   --text-color: #f1b2ce;
   --bg-color: #000028;
   --title-color: #000028;
-  --font-family: "IBM Plex mono";
-  --padding-inline: 20px;
-  --padding-block: 20px;
-  --margin-top-small: 60px;
-  --margin-top-big: 80px;
-  --gallery-gap: 20px;
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-dark.png);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  .header__title {
+    color: #db00ff;
+  }
+
+  .header__rec {
+    display: block;
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .footer__title {
+    color: #db00ff;
+  }
+
+  .content__title {
+    color: var(--accent-color);
+  }
 }

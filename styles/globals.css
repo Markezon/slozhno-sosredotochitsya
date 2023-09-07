@@ -50,3 +50,7 @@ a {
   padding: 0;
   text-decoration: none;
 }
+
+figure {
+  margin: 0;
+}
