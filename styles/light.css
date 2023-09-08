@@ -13,6 +13,7 @@
   --link-color: #ff8dcb;
   --menu-button-hover: 1px solid rgba(50, 49, 45, 0.4);
   --main-title-color: #ffc2e6;
+  --text-shadow: 4px 4px 0 #ff0070;
   --footer-text-shadow: 2px 2px 0 #ff0070;
   color: #353430;
   background-image: url(../images/cover-image-light.png);
@@ -41,6 +42,7 @@
     --link-color: #ff8dcb;
     --menu-button-hover: 1px solid rgba(50, 49, 45, 0.4);
     --main-title-color: #ffc2e6;
+    --text-shadow: 4px 4px 0 #ff0070;
     --footer-text-shadow: 2px 2px 0 #ff0070;
     color: #353430;
     /* Дублируем переменные светлой темы */
